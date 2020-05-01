@@ -1,2 +1,2 @@
 # Wallpaper-App
-Wallpaper changing app using Pixabay's API
+Wallpaper changing app with use of the Pixabay's API made for Uni C++ Course
