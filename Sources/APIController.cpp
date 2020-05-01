@@ -2,6 +2,14 @@
 
 APIController::APIController() {
     this->fileStream = std::make_shared<ostream>();
+    std::ifstream keyFile ("key.txt");
+    if (keyFile.is_open())
+    {
+        std::string key;
+        std::getline(keyFile, key);
+        this->key = to_string_t(key);
+        keyFile.close();
+    }
 }
 
 pplx::task<void> APIController::getPhotos(std::string resultFile, std::string searchTerm, std::string colors,

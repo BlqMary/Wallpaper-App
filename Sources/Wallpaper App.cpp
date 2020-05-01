@@ -12,7 +12,6 @@ int main(){
         sm.changeWallpaper();
     }
     
-    remove("results.json"); 
     return 0;
 }
 

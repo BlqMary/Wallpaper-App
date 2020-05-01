@@ -89,7 +89,7 @@ void MainWindow::changeWallpaper() {
         std::cin >> anwser;
         system("CLS");
     } while (anwser == "y");
-
+    remove(JSONFILENAME.c_str());
 }
 
 std::string MainWindow::getSearchTerm() {

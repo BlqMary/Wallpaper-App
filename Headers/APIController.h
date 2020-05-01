@@ -14,7 +14,7 @@ using namespace utility::conversions;
 
 class APIController {
     std::shared_ptr<ostream> fileStream;
-    const string_t key = to_string_t("16023779-0de0e9c29d6126c42232e343d");
+    string_t key;
 public:
     APIController();
     ~APIController() = default;
